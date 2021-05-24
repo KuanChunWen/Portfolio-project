@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>面試邀約</title>
+    <link rel="shortcut icon" href="./images/pandaIcon.png" />
+    <link rel="bookmark" href="./images/pandaIcon.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="formbody">
+    <h1>面試邀約表單</h1>
+    <br />
+    <!--表單內容-->
+    <form action="" method="GET">
+      <label for="company">公司名稱: </label>
+      <input
+        id="company"
+        type="text"
+        name="InputName"
+        placeholder="company name"
+      />
+      <br />
+      <label for="area">公司地區: </label>
+      <input
+        id="area"
+        list="areaList"
+        type="text"
+        name="area"
+        placeholder="address"
+      />
+      <datalist id="areaList">
+        <option value="基隆市">基隆</option>
+        <option value="台北市">台北</option>
+        <option value="新北市">新北</option>
+        <option value="桃園市">桃園</option>
+        <option value="新竹市">新竹</option>
+        <option value="苗栗市">苗栗</option>
+        <option value="台中市">台中</option>
+        <option value="彰化市">彰化</option>
+        <option value="雲林市">雲林</option>
+        <option value="南投市">南投</option>
+        <option value="嘉義市">嘉義</option>
+        <option value="台南市">台南</option>
+        <option value="高雄市">高雄</option>
+        <option value="屏東市">屏東</option>
+        <option value="澎湖市">澎湖</option>
+      </datalist>
+      <br />
+      <label for="tele">連絡電話: </label>
+      <input
+        id="tele"
+        type="text"
+        name="telephone"
+        placeholder="phone number"
+      />
+      <br />
+      <label for="em">電子信箱: </label>
+      <input id="em" type="email" name="email" placeholder="@email" />
+      <br />
+      職涯方向
+      <input type="checkbox" id="front end" name="position" value="front end" />
+      <label for="front end">前端</label>
+      <input type="checkbox" id="back end" name="position" value="back end" />
+      <label for="back end">後端</label>
+      <input type="checkbox" id="other" name="position" value="other" />
+      <label for="other">其他</label>
+      (可複選)
+      <br />
+      <input id="ft" type="radio" name="class" value="full-time" required />
+      <label for="ft">正職</label>
+      <input id="pt" type="radio" name="class" value="practice" />
+      <label for="pt">實習</label>
+      <hr />
+      <label for="skill">技能需求or其他建議:</label>
+      <br />
+      <textarea
+        name="skill"
+        id="skill"
+        cols="60"
+        rows="10"
+        placeholder="感謝您的建議與邀請!!"
+      ></textarea>
+      <br />
+      <button style="width: 80px; height: 40px" stype="submit">送出邀約</button>
+    </form>
+  </body>
+</html>
